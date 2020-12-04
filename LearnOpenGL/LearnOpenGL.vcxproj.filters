@@ -21,12 +21,21 @@
     <ClCompile Include="include\glad.c">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="1_cordSysControl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="1_Test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\learnopengl\shader_m.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\learnopengl\camera.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
