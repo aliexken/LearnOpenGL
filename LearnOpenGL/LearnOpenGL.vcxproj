@@ -149,6 +149,7 @@ glfw3.lib;opengl32.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependenc
     <ClCompile Include="1_cordSysControl.cpp" />
     <ClCompile Include="1_cordSystem.cpp" />
     <ClCompile Include="1_Test.cpp" />
+    <ClCompile Include="2_LightColor.cpp" />
     <ClCompile Include="include\glad.c" />
   </ItemGroup>
   <ItemGroup>
