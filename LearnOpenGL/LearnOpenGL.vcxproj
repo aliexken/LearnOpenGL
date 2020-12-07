@@ -78,9 +78,9 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>D:\openlib\OpenGL\glfw-3.3.2.bin.WIN64\include;D:\openlib\OpenGL\glad\include;D:\openlib\OpenGL\glm;.\include;D:\openlib\OpenGL\glew-2.1.0\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\openlib\OpenGL\glfw-3.3.2.bin.WIN64\lib-vc2019;D:\openlib\OpenGL\glew-2.1.0\lib\Release\x64;$(LibraryPath)</LibraryPath>
-    <ExecutablePath>D:\openlib\OpenGL\glfw-3.3.2.bin.WIN64\lib-vc2019;D:\openlib\OpenGL\glew-2.1.0\bin\Release\x64;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>D:\openlib\OpenGL\glfw-3.3.2.bin.WIN64\include;D:\openlib\OpenGL\glad\include;D:\openlib\OpenGL\glm;.\include;D:\openlib\OpenGL\glew-2.1.0\include;D:\openlib\OpenGL\Assimp\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\openlib\OpenGL\glfw-3.3.2.bin.WIN64\lib-vc2019;D:\openlib\OpenGL\glew-2.1.0\lib\Release\x64;D:\openlib\OpenGL\Assimp\lib\x64;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>D:\openlib\OpenGL\glfw-3.3.2.bin.WIN64\lib-vc2019;D:\openlib\OpenGL\glew-2.1.0\bin\Release\x64;D:\openlib\OpenGL\Assimp\bin\x64;$(ExecutablePath)</ExecutablePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -126,7 +126,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>glfw3dll.lib;
-glfw3.lib;opengl32.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+glfw3.lib;opengl32.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -154,7 +154,9 @@ glfw3.lib;opengl32.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependenc
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\learnopengl\camera.h" />
+    <ClInclude Include="include\learnopengl\shader.h" />
     <ClInclude Include="include\learnopengl\shader_m.h" />
+    <ClInclude Include="mesh.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
