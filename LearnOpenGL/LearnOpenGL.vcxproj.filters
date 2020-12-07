@@ -24,10 +24,10 @@
     <ClCompile Include="1_cordSysControl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="1_Test.cpp">
+    <ClCompile Include="2_LightColor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="2_LightColor.cpp">
+    <ClCompile Include="2_LightBasic.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

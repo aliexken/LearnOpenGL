@@ -55,7 +55,7 @@ int main()
 
     // build and compile our shader zprogram
     // ------------------------------------
-    Shader ourShader("6.3.coordinate_systems.vs", "6.3.coordinate_systems.fs");
+    Shader ourShader("shader/6.3.coordinate_systems.vs", "shader/6.3.coordinate_systems.fs");
 
     // set up vertex data (and buffer(s)) and configure vertex attributes
     // ------------------------------------------------------------------
