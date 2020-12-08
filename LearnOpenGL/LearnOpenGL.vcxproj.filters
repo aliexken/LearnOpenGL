@@ -30,6 +30,9 @@
     <ClCompile Include="2_LightBasic.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="3_model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\learnopengl\shader_m.h">
@@ -41,10 +44,13 @@
     <ClInclude Include="include\learnopengl\camera.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="mesh.h">
+    <ClInclude Include="include\learnopengl\shader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\learnopengl\shader.h">
+    <ClInclude Include="include\learnopengl\model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\learnopengl\mesh.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

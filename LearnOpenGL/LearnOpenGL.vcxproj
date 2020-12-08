@@ -78,9 +78,9 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>D:\openlib\OpenGL\glfw-3.3.2.bin.WIN64\include;D:\openlib\OpenGL\glad\include;D:\openlib\OpenGL\glm;.\include;D:\openlib\OpenGL\glew-2.1.0\include;D:\openlib\OpenGL\Assimp\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\openlib\OpenGL\glfw-3.3.2.bin.WIN64\lib-vc2019;D:\openlib\OpenGL\glew-2.1.0\lib\Release\x64;D:\openlib\OpenGL\Assimp\lib\x64;$(LibraryPath)</LibraryPath>
-    <ExecutablePath>D:\openlib\OpenGL\glfw-3.3.2.bin.WIN64\lib-vc2019;D:\openlib\OpenGL\glew-2.1.0\bin\Release\x64;D:\openlib\OpenGL\Assimp\bin\x64;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>D:\openlib\OpenGL\glfw-3.3.2.bin.WIN64\include;D:\openlib\OpenGL\glad\include;D:\openlib\OpenGL\glm;.\include;D:\openlib\OpenGL\glew-2.1.0\include;D:\openlib\OpenGL\assimp-3.3.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\openlib\OpenGL\glfw-3.3.2.bin.WIN64\lib-vc2019;D:\openlib\OpenGL\glew-2.1.0\lib\Release\x64;D:\openlib\OpenGL\Assimp\lib\x64;.\lib;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>.\bin;$(ExecutablePath)</ExecutablePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -126,7 +126,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>glfw3dll.lib;
-glfw3.lib;opengl32.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+glfw3.lib;opengl32.lib;assimp-vc140-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -150,13 +150,15 @@ glfw3.lib;opengl32.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependenc
     <ClCompile Include="1_cordSystem.cpp" />
     <ClCompile Include="2_LightBasic.cpp" />
     <ClCompile Include="2_LightColor.cpp" />
+    <ClCompile Include="3_model.cpp" />
     <ClCompile Include="include\glad.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\learnopengl\camera.h" />
+    <ClInclude Include="include\learnopengl\mesh.h" />
+    <ClInclude Include="include\learnopengl\model.h" />
     <ClInclude Include="include\learnopengl\shader.h" />
     <ClInclude Include="include\learnopengl\shader_m.h" />
-    <ClInclude Include="mesh.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
